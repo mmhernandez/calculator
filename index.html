@@ -12,28 +12,28 @@
         <p id="calculator-display">0</p>  <!-- top display section -->
         <div> <!-- bottom number pad section -->
             <div class="row">
-                <div class="number-key">7</div>
-                <div class="number-key">8</div>
-                <div class="number-key">9</div>
-                <div class="math-key">/</div>
+                <div class="number-key" onclick="numPress(this)">7</div>
+                <div class="number-key" onclick="numPress(this)">8</div>
+                <div class="number-key" onclick="numPress(this)">9</div>
+                <div class="math-key" onclick="mathKeyPress(this)">/</div>
             </div>
             <div class="row">
-                <div class="number-key">4</div>
-                <div class="number-key">5</div>
-                <div class="number-key">6</div>
-                <div class="math-key">*</div>
+                <div class="number-key" onclick="numPress(this)">4</div>
+                <div class="number-key" onclick="numPress(this)">5</div>
+                <div class="number-key" onclick="numPress(this)">6</div>
+                <div class="math-key" onclick="mathKeyPress(this)">*</div>
             </div>
             <div class="row">
-                <div class="number-key">1</div>
-                <div class="number-key">2</div>
-                <div class="number-key">3</div>
-                <div class="math-key">-</div>
+                <div class="number-key" onclick="numPress(this)">1</div>
+                <div class="number-key" onclick="numPress(this)">2</div>
+                <div class="number-key" onclick="numPress(this)">3</div>
+                <div class="math-key" onclick="mathKeyPress(this)">-</div>
             </div>
             <div class="row">
-                <div class="number-key">C</div>
-                <div class="number-key">0</div>
+                <div class="number-key" onclick="reset()">C</div>
+                <div class="number-key" onclick="numPress(this)">0</div>
                 <div class="number-key">.</div>
-                <div class="math-key">+</div>
+                <div class="math-key" onclick="mathKeyPress(this)">+</div>
             </div>
             <div class="equals-key">=</div>
         </div>

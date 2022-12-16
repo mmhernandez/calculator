@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.calculator {
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 25%;
+    height: 620px;
+}
+p {
+    color: white;
+    font-weight: bold;
+    font-size: 24pt;
+    height: 35%;
+    padding: 55% 20px 0px 0px;
+    text-align: right;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px;
+}
+.number-key, .math-key {
+    background-color: slategrey;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.number-key {
+    background-color: slategrey;
+}
+.math-key {
+    background-color: darkorange;
+}
+.equals-key {
+    background-color: lightgray;
+    color: white;
+    border-radius: 50px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    margin: 15px 10px;
+}

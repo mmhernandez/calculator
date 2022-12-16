@@ -14,14 +14,14 @@ body {
     margin-top: 20px;
     border-radius: 25px;
     width: 25%;
-    height: 620px;
+    height: 600px;
 }
 p {
     color: white;
     font-weight: bold;
     font-size: 24pt;
-    height: 35%;
-    padding: 55% 20px 0px 0px;
+    height: 200px;
+    padding: 150px 20px 0px 0px;
     text-align: right;
 }
 .row {

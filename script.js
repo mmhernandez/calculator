@@ -1,12 +1,13 @@
 var calcDisplayElement = document.getElementById("calculator-display");
 var firstMathTerm = 0;
-var operator;
+var operator = '';
 
 
 function numPress(element) {
-    if(calcDisplayElement.innerText == 0 || firstMathTerm > 0){
+    if(calcDisplayElement.innerText == 0 || calcDisplayElement.innerText == firstMathTerm){
         calcDisplayElement.innerText = element.innerText;
-    } else {
+    } 
+    else {
         calcDisplayElement.innerText += element.innerText;
     }
 }
@@ -18,9 +19,11 @@ function mathKeyPress(element) {
 
 function reset() {
     calcDisplayElement.innerText = 0;
+    firstMathTerm = 0;
+    operator = '';
 }
 
 function calculate() {
     var stringResult = firstMathTerm + operator + calcDisplayElement.innerText;
-    calcDisplayElement.innerText = eval(stringResult);
+    calcDisplayElement.innerText = eval(stringResult).toFixed(3);
 }
